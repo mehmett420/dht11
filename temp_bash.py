@@ -7,9 +7,9 @@ import time
 data=open('data.txt','w')
 [ temp,hum ] = grovepi.dht(dht_sensor_port,dht_sensor_type)
 print ('Temp: '+ str(temp) + '*C' + '\tHumidity:' + ' %'+ str(hum) + ' ' + str(time.strftime("%s",time.gmtime())))
-data.write('temperature,location=Gozen_Holding ' + 'temp='+ str(temp))
+data.write('temperature,location=yourlocation ' + 'temp='+ str(temp))
 data.write('\n')
-data.write('temperature,location=Gozen_Holding ' + 'hum='+ str(hum))
+data.write('temperature,location=yourlocation ' + 'hum='+ str(hum))
 
 def mail(content):
     mail = smtplib.SMTP("smtp.gmail.com",587)
