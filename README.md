@@ -1,9 +1,5 @@
 # dht11
 
-Influxdb
+Teknolojiler: Influxdb,Grafana,Python,Raspberry pi,Grove pi
 
-Grafama
 
-Python
-
-Raspberry pi 
