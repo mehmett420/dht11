@@ -14,8 +14,6 @@ Grove pi indirmek icin :
 
 ```reboot```
 
-```https://github.com/DexterInd/GrovePi.git```
-
 Kontrol etmek icin :
 
 `sudo i2detect -y 1`
