@@ -16,7 +16,7 @@ geo_request_url = 'https://get.geojs.io/v1/ip/geo/' + my_ip + '.json'
 geo_request = requests.get(geo_request_url)
 geo_data = geo_request.json()
 gps=geo_data['organization']
-org=gps.replace(" ", "_")
+org=gps.replace(" ", "_")#Influxdb her bir bosluktan sonra gelen datayi ayri saydigi icin bosluklari '_' lere esitliyor.
 
 #Dosyaya veri yazdirmak icin.
 data=open('data.txt','w')
