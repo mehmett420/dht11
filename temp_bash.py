@@ -28,8 +28,8 @@ data.write('temperature,location=' + org + ' hum='+ str(hum))
 def mail(content):
     mail = smtplib.SMTP("smtp.gmail.com",587)
     mail.starttls()
-    mail.login('yourmailgmail.com','parola')
-    mail.sendmail("yourmail@gmail.com","send@gmail.com",content)
+    mail.login('sourcemailgmail.com','parola')
+    mail.sendmail("sourcemail@gmail.com","targetmail@gmail.com",content)
 
 if temp>=25.0:
     content = 'Oda sicakligi ' + str(temp) + '*C' + ' Sicaklik yuksek!'
