@@ -6,6 +6,7 @@ import time
 
 #Grove pi ye bagli olan port
 dht_sensor_port=4
+#type=0 DHT11 type=1 DHT22
 dht_sensor_type=0
 
 #Ip adresinden konum tespiti icin.
