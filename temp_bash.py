@@ -39,7 +39,7 @@ if temp>=25.0:
     content = 'Oda sicakligi ' + str(temp) + '*C' + ' Sicaklik yuksek!'
     mail(content)
 elif temp<=15:
-    content = 'Oda sicakligi ' + str(temp) + '*C' + ' Sicakligi artirmaniz onerilir.'
+    content = 'Oda sicakligi ' + str(temp) + '*C' + ' Sicakligi dusuk!'
     mail(content)
 elif hum >=35:
     content = 'Odadaki nem orani  %' +  str(hum)  + ' Nem orani cok yuksek!'
