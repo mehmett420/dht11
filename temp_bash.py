@@ -5,7 +5,7 @@ import requests
 import time
 
 #Grove pi ye bagli olan port
-dht_sensor_port=4
+dht_sensor_port=4 #ben D4 portunu kullandim!
 #type=0 DHT11 type=1 DHT22
 dht_sensor_type=0
 
@@ -17,10 +17,10 @@ geo_request_url = 'https://get.geojs.io/v1/ip/geo/' + my_ip + '.json'
 geo_request = requests.get(geo_request_url)
 geo_data = geo_request.json()
 gps=geo_data['organization']
-org=gps.replace(" ", "_")#Influxdb her bir bosluktan sonra gelen datayi ayri saydigi icin bosluklari '_' lere esitliyor.
+org=gps.replace(" ", "_")#Influxdb her bir bosluktan sonra gelen datayi ayri gordugu icin bosluklari '_' lere esitliyor.
 
 #Dosyaya veri yazdirmak icin.
-data=open('data.txt','w')
+data=open('data.txt','w')#data.txt olusturulan dosya adi
 [ temp,hum ] = grovepi.dht(dht_sensor_port,dht_sensor_type)
 print ('Temp: '+ str(temp) + '*C' + '\tHumidity:' + ' %'+ str(hum) + ' ' + str(time.strftime("%s",time.gmtime())))
 data.write('temperature,location=' + org + ' temp='+ str(temp))
