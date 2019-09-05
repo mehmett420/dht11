@@ -1,4 +1,4 @@
-#Grove pi uzerinde python3 kullanarak DHT 11 sensor ile sicaklik vve nem degerlerini alip influx db ye yazdirma.
+#Grove pi uzerinde python3 kullanarak DHT 11 sensor ile sicaklik ve nem degerlerini alip influx db ye yazdirma.
 import grovepi
 import time
 import time
