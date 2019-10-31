@@ -1,7 +1,6 @@
 #Grove pi uzerinde python3 kullanarak DHT 11 sensor ile sicaklik ve nem degerlerini alip influx db ye yazdirma.
 import grovepi
 import time
-import time
 import requests
 dht_sensor_port=4
 dht_sensor_type=0
